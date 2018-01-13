@@ -2,9 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Vuex Todo Sample</title>
-  <link rel="stylesheet" href="">
+  <title>TodoList</title>
   <style>
     main {
       display: flex;
@@ -22,8 +20,10 @@
 </head>
 <body>
   <main id="app">
+    <div class="header">
+      <h1>Todo Input</h1>
+    </div>
     <div class="wrap">
-      <h2>Todo Input</h2>
       <input type="text" @keyup.enter="addTodoText"/>
     </div>
     <div class="wrap">
