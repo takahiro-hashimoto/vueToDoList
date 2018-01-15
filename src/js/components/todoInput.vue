@@ -1,14 +1,6 @@
 <template>
-  <div class="wrap">
-    <input type="text" @keyup.enter="addTodoText"/>
-  </div>
+  <input type="text" @keyup.enter="addTodoText"/>
 </template>
-
-<style scoped>
-  .wrap {
-    padding: 0 10px;
-  }
-</style>
 
 <script>
   export default {

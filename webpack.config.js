@@ -2,7 +2,7 @@ module.exports = {
   entry: './src/js/app.js',
   output: {
     path: __dirname,
-    filename: './src/js/bundle.js'
+    filename: './dist/bundle.js'
   },
   resolve: {
     alias: {
