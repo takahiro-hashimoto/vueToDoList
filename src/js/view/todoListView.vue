@@ -1,6 +1,6 @@
 <template>
-  <section class="wrap">
-    <h2>Todo List</h2>
+  <section class="container">
+    <h2>未実施のアイテム</h2>
     <todo-list></todo-list>
   </section>
 </template>
