@@ -1,6 +1,5 @@
 <template>
-  <section class="wrap">
-    <h2>Todo Input</h2>
+  <section class="container">
     <todo-input></todo-input>
   </section>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <section class="wrap">
-    <h2>Done List</h2>
+  <section class="container">
+    <h2>完了したアイテム</h2>
     <done-list></done-list>
   </section>
 </template>
