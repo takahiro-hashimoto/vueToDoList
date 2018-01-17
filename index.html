@@ -4,14 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>todoList</title>
+<link rel="stylesheet" type="text/css" href="src/css/reset.css">
+<style media="screen">
+.header-nav {
+  display: table;
+  width: 100%;
+}
+
+.header-nav li {
+  display: table-cell;
+  text-align: center;
+}
+
+.header-nav a {
+  display: block;
+  color: #333;
+  background-color: #ccc;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.header-nav li:hover {
+  opacity: .8;
+}
+
+</style>
 </head>
 <body>
   <div id="app">
-    <header>
-      <router-link to="todoInput">TodoInput</router-link>
-      <router-link to="todoList">todoList</router-link>
-      <router-link to="doneList">doneList</router-link>
-    </header>
+    <div class='header'>
+      <ul class='header-nav'>
+        <li><router-link to="todoInput">TodoInput</router-link></li>
+        <li><router-link to="todoList">todoList</router-link></li>
+        <li><router-link to="doneList">doneList</router-link></li>
+      </ul>
+    </div>
     <router-view></router-view>
   </div>
 <script src="dist/bundle.js"></script>
