@@ -1,6 +1,9 @@
 <template>
   <section class="container">
-    <todo-input></todo-input>
+    <h2 class="heading-title">アイテムを追加する</h2>
+    <div class="container-inner">
+      <todo-input></todo-input>
+    </div>
   </section>
 </template>
 

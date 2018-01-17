@@ -710,6 +710,9 @@ module.exports = g;
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -746,6 +749,9 @@ module.exports = g;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_todoList_vue__ = __webpack_require__(28);
+//
+//
+//
 //
 //
 //
@@ -834,6 +840,9 @@ module.exports = g;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_doneList_vue__ = __webpack_require__(36);
+//
+//
+//
 //
 //
 //
@@ -15837,7 +15846,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "container" }, [_c("todo-input")], 1)
+  return _c("section", { staticClass: "container" }, [
+    _c("h2", { staticClass: "heading-title" }, [_vm._v("アイテムを追加する")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-inner" }, [_c("todo-input")], 1)
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -16097,7 +16110,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "container" }, [_c("todo-list")], 1)
+  return _c("section", { staticClass: "container" }, [
+    _c("h2", { staticClass: "heading-title" }, [_vm._v("未実施のアイテム")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-inner" }, [_c("todo-list")], 1)
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -16357,7 +16374,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "container" }, [_c("done-list")], 1)
+  return _c("section", { staticClass: "container" }, [
+    _c("h2", { staticClass: "heading-title" }, [_vm._v("完了したアイテム")]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-inner" }, [_c("done-list")], 1)
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

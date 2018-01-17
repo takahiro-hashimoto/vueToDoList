@@ -1,7 +1,9 @@
 <template>
   <section class="container">
-    <h2>完了したアイテム</h2>
-    <done-list></done-list>
+    <h2 class="heading-title">完了したアイテム</h2>
+    <div class="container-inner">
+      <done-list></done-list>
+    </div>
   </section>
 </template>
 
