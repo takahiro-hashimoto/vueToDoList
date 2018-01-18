@@ -74,3 +74,7 @@ body {
   color: #333;
   padding: 16px 20px;
 }
+
+.l-bottom-small {
+  margin-bottom: 12px !important;
+}

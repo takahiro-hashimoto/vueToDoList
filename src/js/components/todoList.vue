@@ -2,8 +2,8 @@
   <div class="wrap">
     <ul v-cloak class="list">
       <li class="list-item" v-for="todo in todos">
-        <p>ID : {{todo.id}}</p>
-        <p>Text : {{todo.text}}</p>
+        <p>ID: {{todo.id}}</p>
+        <p>Text: {{todo.text}}</p>
         <button @click="doneTodo(todo.id)">Done</button>
       </li>
     </ul>
@@ -13,17 +13,22 @@
 <style scoped>
 
   .list{
+    box-sizing: border-box;
     list-style: none;
-    width: 640px;
+    width: 80%;
     margin: 0 auto;
   }
 
   .list-item {
     display: table;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    background-color: #fff;
     width: 100%;
+    box-sizing: border-box;
     vertical-align: middle;
+    position: relative;
+    margin-top: -1px;
   }
 
   .list-item > * {
@@ -31,12 +36,6 @@
     padding-right: 12px;
   }
 
-  .wrap {
-    padding: 0 10px;
-  }
-  [v-cloak] {
-    display: none;
-  }
 </style>
 
 <script>

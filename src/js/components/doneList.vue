@@ -11,15 +11,7 @@
 </template>
 
 <style scoped>
-  ul {
-    list-style: none;
-  }
-  .wrap {
-    padding: 0 10px;
-  }
-  [v-cloak] {
-    display: none;
-  }
+
 </style>
 
 <script>

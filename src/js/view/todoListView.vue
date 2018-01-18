@@ -8,9 +8,7 @@
 </template>
 
 <style scoped>
-  .wrap {
-    padding: 0 10px;
-  }
+
 </style>
 
 <script>

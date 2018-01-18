@@ -7,7 +7,7 @@ import mutations from './mutation/mutations.js';
 Vue.use(Vuex);
 Vue.use(VueRouter);
 
-var store = new Vuex.Store({
+const store = new Vuex.Store({
   state: {
     todos: [],
     dones: []
