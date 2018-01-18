@@ -30,7 +30,4 @@ new Vue({
 ``` 
 ![alt hoge](https://vuex.vuejs.org/ja/images/flow.png)
 ### vue.js + vuexを使った場合
-```
-hoge
-``` 
 ![alt hoge](https://vuex.vuejs.org/ja/images/vuex.png)
