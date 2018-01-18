@@ -16385,7 +16385,7 @@ if (false) {
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
   ADD_TODO (state, text) {
-    var todo = {
+    const todo = {
       id: 0,
       text: text
     }
@@ -16404,7 +16404,7 @@ if (false) {
     }
   },
   RESET_TODO (state, id) {
-    var todo = {};
+    const todo = {};
     for (var i = 0; i < state.dones.length; i++) {
       if (state.dones[i].id === id) {
         todo = state.dones[i];
