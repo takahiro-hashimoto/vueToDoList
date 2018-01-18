@@ -31,3 +31,8 @@ new Vue({
 ![alt hoge](https://vuex.vuejs.org/ja/images/flow.png)
 ### vue.js + vuexを使った場合
 ![alt hoge](https://vuex.vuejs.org/ja/images/vuex.png)
+
+## つまずいたところ
+* 最適なディレクトリ構成がわからない
+* 必要なpackageがわかりづらい
+* 調べてみてもなかなか答えがでない
