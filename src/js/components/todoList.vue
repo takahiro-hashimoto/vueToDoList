@@ -1,10 +1,10 @@
 <template>
-  <div class="wrap">
-    <ul v-cloak class="list">
+  <div>
+    <ul class="list">
       <li class="list-item" v-for="todo in todos">
-        <p>ID: {{todo.id}}</p>
-        <p>Text: {{todo.text}}</p>
-        <button @click="doneTodo(todo.id)">Done</button>
+        <p class="list-item-number">{{todo.id}}</p>
+        <p class="list-item-text">{{todo.text}}</p>
+        <p class="list-item-button"><button @click="doneTodo(todo.id)">Done</button></p>
       </li>
     </ul>
   </div>
@@ -21,7 +21,6 @@
 
   .list-item {
     display: table;
-    padding: 12px;
     border: 1px solid #ddd;
     background-color: #fff;
     width: 100%;
@@ -33,7 +32,23 @@
 
   .list-item > * {
     display: table-cell;
-    padding-right: 12px;
+    padding: 12px;
+  }
+
+  .list-item-number {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    width: 5%;
+  }
+
+  .list-item-text {
+    width: 85%;
+    text-align: left;
+  }
+
+  .list-item-button {
+    width: 10%;
+    text-align: center;
   }
 
 </style>

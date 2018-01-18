@@ -744,6 +744,7 @@ module.exports = g;
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   methods: {
@@ -762,6 +763,21 @@ module.exports = g;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -852,6 +868,45 @@ module.exports = g;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -15814,7 +15869,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.inputArea[data-v-252bc3b0] {\n  padding: 16px;\n  border: 1px solid #ccc;\n  width: 80%;\n  margin: 0 auto 32px;\n  display: block;\n  font-size: 16px;\n  box-sizing: border-box;\n}\n", ""]);
+exports.push([module.i, "\n.inputArea[data-v-252bc3b0] {\n  padding: 16px;\n  border: 1px solid #ccc;\n  width: 80%;\n  margin: 0 auto 32px;\n  display: block;\n  font-size: 16px;\n  box-sizing: border-box;\n  border-radius: 6px;\n}\n", ""]);
 
 // exports
 
@@ -15946,7 +16001,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.list[data-v-8040aaa0]{\n  box-sizing: border-box;\n  list-style: none;\n  width: 80%;\n  margin: 0 auto;\n}\n.list-item[data-v-8040aaa0] {\n  display: table;\n  padding: 12px;\n  border: 1px solid #ddd;\n  background-color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  vertical-align: middle;\n  position: relative;\n  margin-top: -1px;\n}\n.list-item > *[data-v-8040aaa0] {\n  display: table-cell;\n  padding-right: 12px;\n}\n\n", ""]);
+exports.push([module.i, "\n.list[data-v-8040aaa0]{\n  box-sizing: border-box;\n  list-style: none;\n  width: 80%;\n  margin: 0 auto;\n}\n.list-item[data-v-8040aaa0] {\n  display: table;\n  border: 1px solid #ddd;\n  background-color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  vertical-align: middle;\n  position: relative;\n  margin-top: -1px;\n}\n.list-item > *[data-v-8040aaa0] {\n  display: table-cell;\n  padding: 12px;\n}\n.list-item-number[data-v-8040aaa0] {\n  border-right: 1px solid #ddd;\n  text-align: center;\n  width: 5%;\n}\n.list-item-text[data-v-8040aaa0] {\n  width: 85%;\n  text-align: left;\n}\n.list-item-button[data-v-8040aaa0] {\n  width: 10%;\n  text-align: center;\n}\n\n", ""]);
 
 // exports
 
@@ -15960,27 +16015,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "wrap" }, [
+  return _c("div", [
     _c(
       "ul",
       { staticClass: "list" },
       _vm._l(_vm.todos, function(todo) {
         return _c("li", { staticClass: "list-item" }, [
-          _c("p", [_vm._v("ID: " + _vm._s(todo.id))]),
+          _c("p", { staticClass: "list-item-number" }, [
+            _vm._v(_vm._s(todo.id))
+          ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Text: " + _vm._s(todo.text))]),
+          _c("p", { staticClass: "list-item-text" }, [
+            _vm._v(_vm._s(todo.text))
+          ]),
           _vm._v(" "),
-          _c(
-            "button",
-            {
-              on: {
-                click: function($event) {
-                  _vm.doneTodo(todo.id)
+          _c("p", { staticClass: "list-item-button" }, [
+            _c(
+              "button",
+              {
+                on: {
+                  click: function($event) {
+                    _vm.doneTodo(todo.id)
+                  }
                 }
-              }
-            },
-            [_vm._v("Done")]
-          )
+              },
+              [_vm._v("Done")]
+            )
+          ])
         ])
       })
     )
@@ -16215,7 +16276,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.list[data-v-04f769ec]{\n  box-sizing: border-box;\n  list-style: none;\n  width: 80%;\n  margin: 0 auto;\n}\n.list-item[data-v-04f769ec] {\n  display: table;\n  border: 1px solid #ddd;\n  background-color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  vertical-align: middle;\n  position: relative;\n  margin-top: -1px;\n}\n.list-item > *[data-v-04f769ec] {\n  display: table-cell;\n  padding: 12px;\n}\n.list-item-number[data-v-04f769ec] {\n  border-right: 1px solid #ddd;\n  text-align: center;\n  width: 5%;\n}\n.list-item-text[data-v-04f769ec] {\n  width: 85%;\n  text-align: left;\n}\n.list-item-button[data-v-04f769ec] {\n  width: 10%;\n  text-align: center;\n}\n\n", ""]);
 
 // exports
 
@@ -16229,27 +16290,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "wrap" }, [
+  return _c("div", [
     _c(
       "ul",
-      {},
+      { staticClass: "list" },
       _vm._l(_vm.dones, function(done) {
-        return _c("li", [
-          _c("p", [_vm._v("ID : " + _vm._s(done.id))]),
+        return _c("li", { staticClass: "list-item" }, [
+          _c("p", { staticClass: "list-item-number" }, [
+            _vm._v(_vm._s(done.id))
+          ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Text : " + _vm._s(done.text))]),
+          _c("p", { staticClass: "list-item-text" }, [
+            _vm._v(_vm._s(done.text))
+          ]),
           _vm._v(" "),
-          _c(
-            "button",
-            {
-              on: {
-                click: function($event) {
-                  _vm.resetTodo(done.id)
+          _c("p", { staticClass: "list-item-button" }, [
+            _c(
+              "button",
+              {
+                on: {
+                  click: function($event) {
+                    _vm.resetTodo(done.id)
+                  }
                 }
-              }
-            },
-            [_vm._v("Reset")]
-          )
+              },
+              [_vm._v("Reset")]
+            )
+          ])
         ])
       })
     )

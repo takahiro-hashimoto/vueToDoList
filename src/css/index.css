@@ -64,7 +64,7 @@ body {
 }
 
 .container-inner {
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .heading-title {
@@ -73,6 +73,8 @@ body {
   text-align: left;
   color: #333;
   padding: 16px 20px;
+  background-color: #ddd;
+  border-bottom: 1px solid #ccc;
 }
 
 .l-bottom-small {
