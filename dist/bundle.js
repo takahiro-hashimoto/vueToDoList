@@ -749,10 +749,12 @@ module.exports = g;
 /* harmony default export */ __webpack_exports__["a"] = ({
   methods: {
     addTodoText(e) {
-      var text = e.target.value;
-      this.$store.dispatch('addTodo', {
-        text: text
-      });
+      const text = e.target.value;
+      if (text) {
+        this.$store.dispatch('addTodo', {
+          text: text
+        });
+      }
       e.target.value = '';
     }
   }
@@ -15869,7 +15871,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.inputArea[data-v-252bc3b0] {\n  padding: 16px;\n  border: 1px solid #ccc;\n  width: 80%;\n  margin: 0 auto 32px;\n  display: block;\n  font-size: 16px;\n  box-sizing: border-box;\n  border-radius: 6px;\n}\n", ""]);
+exports.push([module.i, "\n.inputArea[data-v-252bc3b0] {\n  padding: 16px;\n  border: 1px solid #ddd;\n  width: 80%;\n  margin: 0 auto 32px;\n  display: block;\n  font-size: 16px;\n  box-sizing: border-box;\n  border-radius: 6px;\n}\n", ""]);
 
 // exports
 
@@ -16276,7 +16278,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.list[data-v-04f769ec]{\n  box-sizing: border-box;\n  list-style: none;\n  width: 80%;\n  margin: 0 auto;\n}\n.list-item[data-v-04f769ec] {\n  display: table;\n  border: 1px solid #ddd;\n  background-color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  vertical-align: middle;\n  position: relative;\n  margin-top: -1px;\n}\n.list-item > *[data-v-04f769ec] {\n  display: table-cell;\n  padding: 12px;\n}\n.list-item-number[data-v-04f769ec] {\n  border-right: 1px solid #ddd;\n  text-align: center;\n  width: 5%;\n}\n.list-item-text[data-v-04f769ec] {\n  width: 85%;\n  text-align: left;\n}\n.list-item-button[data-v-04f769ec] {\n  width: 10%;\n  text-align: center;\n}\n\n", ""]);
+exports.push([module.i, "\n.list[data-v-04f769ec] {\n  box-sizing: border-box;\n  list-style: none;\n  width: 80%;\n  margin: 0 auto;\n}\n.list-item[data-v-04f769ec] {\n  display: table;\n  border: 1px solid #ddd;\n  background-color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  vertical-align: middle;\n  position: relative;\n  margin-top: -1px;\n}\n.list-item > *[data-v-04f769ec] {\n  display: table-cell;\n  padding: 12px;\n}\n.list-item-number[data-v-04f769ec] {\n  border-right: 1px solid #ddd;\n  text-align: center;\n  width: 5%;\n}\n.list-item-text[data-v-04f769ec] {\n  width: 85%;\n  text-align: left;\n}\n.list-item-button[data-v-04f769ec] {\n  width: 10%;\n  text-align: center;\n}\n\n", ""]);
 
 // exports
 
@@ -16395,7 +16397,7 @@ if (false) {
     state.todos.push(todo);
   },
   DONE_TODO (state, id) {
-    for (var i = 0; i < state.todos.length; i++) {
+    for (let i = 0; i < state.todos.length; i++) {
       if (state.todos[i].id === id) {
         state.dones.push(state.todos[i]);
         state.todos.splice(i, 1);
@@ -16405,7 +16407,7 @@ if (false) {
   },
   RESET_TODO (state, id) {
     const todo = {};
-    for (var i = 0; i < state.dones.length; i++) {
+    for (let i = 0; i < state.dones.length; i++) {
       if (state.dones[i].id === id) {
         todo = state.dones[i];
         state.dones.splice(i, 1);

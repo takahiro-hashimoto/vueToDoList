@@ -12,7 +12,7 @@
 
 <style scoped>
 
-  .list{
+  .list {
     box-sizing: border-box;
     list-style: none;
     width: 80%;

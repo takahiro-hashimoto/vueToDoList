@@ -10,7 +10,7 @@ export default {
     state.todos.push(todo);
   },
   DONE_TODO (state, id) {
-    for (var i = 0; i < state.todos.length; i++) {
+    for (let i = 0; i < state.todos.length; i++) {
       if (state.todos[i].id === id) {
         state.dones.push(state.todos[i]);
         state.todos.splice(i, 1);
@@ -20,7 +20,7 @@ export default {
   },
   RESET_TODO (state, id) {
     const todo = {};
-    for (var i = 0; i < state.dones.length; i++) {
+    for (let i = 0; i < state.dones.length; i++) {
       if (state.dones[i].id === id) {
         todo = state.dones[i];
         state.dones.splice(i, 1);
