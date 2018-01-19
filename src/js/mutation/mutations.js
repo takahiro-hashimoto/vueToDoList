@@ -28,8 +28,8 @@ export default {
       }
     }
     state.todos.push(todo);
-    state.todos.sort(function(a,b){
-      if(a.id<b.id) return -1;
+    state.todos.sort(function(a, b){
+      if(a.id < b.id) return -1;
       if(a.id > b.id) return 1;
       return 0;
     })
